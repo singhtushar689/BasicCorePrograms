@@ -4,17 +4,16 @@
     {
         static void Main(string[] args)
         {
-            double number = 2;
-            double PowerOf2 = 31;
-            double result = 0;
+            Console.WriteLine("Enter the terms for Harmonic Nunber");
+            int terms = Convert.ToInt32(Console.ReadLine());
+            double sum = 0;
 
-            for(int i = 1; i<= PowerOf2; i++)
+            for(double i = 1; i<= terms; i++)
             {
-                result = Math.Pow(2, i);
-                Console.WriteLine(result);
+                sum += 1 / i;   
             }
-            
-            
+            Console.WriteLine("Sum of {0} terms of Harmonic Number is {1}",terms,sum);
         }
+        
     }
 }
