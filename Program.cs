@@ -1,21 +1,20 @@
 ﻿namespace BasicCorePrograms
 {
-    internal class SwapNumbers
+    internal class EvenAndOddNumber
+
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter the first Number");
-            int firstNum = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter the second Number");
-            int secondNum = Convert.ToInt32(Console.ReadLine());
-
-            Console.WriteLine("Before swapping firstNumber and secondNumber are {0} and {1}",firstNum ,secondNum);
-
-            firstNum = firstNum * secondNum;
-            secondNum = firstNum / secondNum;
-            firstNum = firstNum / secondNum;
-            Console.WriteLine("After swapping firstNumber  and secondNumber are {0} and {1}",firstNum, secondNum);
-
+            Console.WriteLine("Enter the Number");
+            int number = Convert.ToInt32(Console.ReadLine());
+            if( number % 2 == 0)
+            {
+                Console.WriteLine("Number is even");
+            }
+            else
+            {
+                Console.WriteLine("Number is odd");
+            }
         }   
     }
 }
