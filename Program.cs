@@ -4,17 +4,16 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter the Year to Check Whether it is LeapYear or not");
-            int year = Convert.ToInt32(Console.ReadLine());
-            if((year % 4 == 00 || year % 100 != 0) && (year % 400 == 0))
-            {
-                Console.WriteLine("It is a leap Year");
+            double number = 2;
+            double PowerOf2 = 31;
+            double result = 0;
 
-            }
-            else
+            for(int i = 1; i<= PowerOf2; i++)
             {
-                Console.WriteLine("It is not a Leap Year");
+                result = Math.Pow(2, i);
+                Console.WriteLine(result);
             }
+            
             
         }
     }
