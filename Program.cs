@@ -1,25 +1,36 @@
 ﻿namespace BasicCorePrograms
 {
-    internal class VowelAndConsonant
+    internal class GreatestAmongThreeNumbers
 
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter the Character");
-            char ch = Convert.ToChar(Console.ReadLine());
-            if( (ch == 'a')|| ch == 'e'|| ch =='i' || ch =='o'|| ch == 'u' 
-                || ch == 'A'|| ch =='E'|| ch =='I'|| ch == 'O'|| ch =='U')
+            Console.WriteLine("Enter the First Number");
+            int first  = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the Second Number");
+            int second = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the Third Number");
+            int third = Convert.ToInt32(Console.ReadLine());
+            
+            if ((first > second) && (first > third))
             {
-                Console.WriteLine("It is Vowel");
+                Console.WriteLine("{0} is greatest among three number",first);
             }
-            else if ((ch>='a' && ch<= 'z') ||(ch >='A' && ch <='Z'))
+            else if ((second > first) && (second > third)) 
             {
-                Console.WriteLine("It is Consonant");
+                Console.WriteLine("{0} is greatest among three number", second);
+            }
+            else if ((third> second) && (third > first)) 
+            {
+                Console.WriteLine("{0} is greatest among three number", third);
             }
             else
             {
                 Console.WriteLine("Invalid Entry");
             }
+        
+        
+        
         }   
     }
 }
