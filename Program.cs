@@ -1,19 +1,24 @@
 ﻿namespace BasicCorePrograms
 {
-    internal class EvenAndOddNumber
+    internal class VowelAndConsonant
 
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter the Number");
-            int number = Convert.ToInt32(Console.ReadLine());
-            if( number % 2 == 0)
+            Console.WriteLine("Enter the Character");
+            char ch = Convert.ToChar(Console.ReadLine());
+            if( (ch == 'a')|| ch == 'e'|| ch =='i' || ch =='o'|| ch == 'u' 
+                || ch == 'A'|| ch =='E'|| ch =='I'|| ch == 'O'|| ch =='U')
             {
-                Console.WriteLine("Number is even");
+                Console.WriteLine("It is Vowel");
+            }
+            else if ((ch>='a' && ch<= 'z') ||(ch >='A' && ch <='Z'))
+            {
+                Console.WriteLine("It is Consonant");
             }
             else
             {
-                Console.WriteLine("Number is odd");
+                Console.WriteLine("Invalid Entry");
             }
         }   
     }
